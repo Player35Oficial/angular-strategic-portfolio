@@ -2,8 +2,15 @@
 @import 'app/styles/variables';
 @import 'app/styles/tipography';
 
+* {
+  font-family: $body-font-family;
+}
+
 body {
   background-color: $surface-background;
-  font-family: $body-font-family;
   color: $text-primary;
+}
+
+fa-icon {
+  height: min-content;
 }

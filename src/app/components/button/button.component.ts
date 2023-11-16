@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IconDefinition, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-button',
@@ -6,6 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  @Input() buttonLabel = '';
-  @Input() buttonImg: string = '';
+  @Input() buttonLabel? = '';
+  @Input() buttonIcon!: IconDefinition;
+  @Input() color = '';
+  @Input() typeButton = '';
 }
