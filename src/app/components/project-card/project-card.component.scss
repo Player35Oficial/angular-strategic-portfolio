@@ -1,0 +1,84 @@
+@import "../../../styles.scss";
+
+// Project-card
+.project-card {
+  background-color: $surface-primary;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 24rem;
+  transition: all 0.2s;
+  position: relative;
+  border-color: transparent;
+  border-width: 1.5px;
+  border-style: solid;
+
+  .links-container {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: 0 0 48px 0 $card-shadow-color;
+    border-color: $stroke-highlight;
+    border-width: 1.5px;
+    border-style: solid;
+    transition: all 0.4s;
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+
+      .link {
+        background-color: $surface-background;
+        padding: 0.75rem;
+        width: min-content;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: $text-primary;
+        transition: background 0.2s;
+
+        &:hover {
+          background-color: $surface-secondary;
+          box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.40);
+        }
+      }
+    }
+  }
+
+  .img {
+    background-color: $surface-tertiary;
+    display: flex;
+    height: 10rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    align-items: center;
+
+    .tech-list {
+      display: flex;
+      gap: 1rem;
+      color: $techs-color;
+      font-size: 1.25rem;
+    }
+  }
+
+  .main-info {
+    .title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      margin: 0.5rem 0;
+    }
+  }
+}
