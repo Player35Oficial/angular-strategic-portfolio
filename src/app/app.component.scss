@@ -114,3 +114,68 @@
     margin: 0 auto;
   }
 }
+
+// Contact
+.contact-container {
+  padding: 3rem 1.5rem;
+  background-color: $surface-primary;
+
+  .hs {
+    margin-top: 2.5rem;
+    color: $stroke-highlight;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .call-action {
+    color: $text-secondary;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+
+    a {
+      color: $stroke-highlight;
+    }
+  }
+
+  .social-buttons-container {
+    display: flex;
+    gap: 0.5rem;
+
+    app-button {
+      fa-icon {
+        line-height: 0;
+      }
+    }
+  }
+
+  .form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .form-group {
+      width: 100%;
+
+      input,
+      textarea {
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        border-style: none;
+        background-color: $surface-background;
+        color: $text-secondary;
+
+        &:focus-visible {
+          outline-width: 1.5px;
+          outline-color: $stroke-highlight;
+          outline-style: solid;
+        }
+      }
+    }
+  }
+}

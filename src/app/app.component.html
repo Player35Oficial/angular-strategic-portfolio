@@ -124,3 +124,61 @@
     class="button"
   ></app-button>
 </div>
+
+<div class="contact-container">
+  <img
+    src="../assets/good-team-pana.svg"
+    alt="just an image illustrate a collaborative team"
+  />
+  <div class="contact-me">
+    <p class="hs">Contact</p>
+    <p class="title">Enjoyed my work? Let’s work together</p>
+    <p class="call-action">
+      I’m always up for a chat. Pop me an email at
+      <a href="mailto:yuri.dev35@gmail.com">yuri.dev35@gmail.com</a> or give me
+      a shout on social media.
+    </p>
+
+    <div class="social-buttons-container">
+      <app-button
+        [buttonIcon]="githubIcon"
+        typeButton="icon"
+        color="secondary"
+      ></app-button>
+      <app-button
+        [buttonIcon]="linkedInIcon"
+        typeButton="icon"
+        color="secondary"
+      ></app-button>
+      <app-button
+        [buttonIcon]="instagramIcon"
+        typeButton="icon"
+        color="secondary"
+      ></app-button>
+    </div>
+
+    <form class="form" action="">
+      <div class="form-group">
+        <input type="text" name="name" id="name" placeholder="Name" />
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+
+      <div class="form-group">
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message"
+        ></textarea>
+      </div>
+
+      <app-button
+        [buttonIcon]="rightArrowIcon"
+        buttonLabel="Send me a message"
+        color="primary"
+      ></app-button>
+    </form>
+  </div>
+</div>

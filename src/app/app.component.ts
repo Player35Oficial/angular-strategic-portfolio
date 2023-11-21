@@ -7,7 +7,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 import { fadeInOutAnimation } from './shared/icon-animations';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faInstagram,
+  faJs,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +29,10 @@ export class AppComponent {
 
   rightArrowIcon = faRightLong;
   resumeIcon = faFileLines;
+
+  instagramIcon = faInstagram;
+  linkedInIcon = faLinkedin;
+  githubIcon = faGithub;
 
   toggleMenu() {
     let menu = document.querySelector('.header-components.mobile');
