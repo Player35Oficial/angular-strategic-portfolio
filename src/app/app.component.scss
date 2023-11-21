@@ -1,0 +1,88 @@
+@import "./styles/variables";
+
+.initial-container {
+  .title {
+    font-weight: 400;
+    background: var(--brand-gradient-horizontal, linear-gradient(90deg, #9955e8 0%, #7bffaf 50%));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0 1rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+
+    .role {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .auto-description {
+      color: $text-secondary;
+      line-height: 1.5rem;
+    }
+  }
+
+  .actions {
+    padding: 1.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  position: relative;
+
+  .arrow {
+    position: absolute;
+    right: 4rem;
+  }
+}
+
+.more-about-me-container {
+  margin-top: 2rem;
+  padding: 4rem 1.5rem;
+  background-color: $surface-primary;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .image {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .info {
+    .techs {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about-me {
+    margin-top: 2rem;
+
+    p:nth-child(1) {
+      color: $stroke-highlight;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .role {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .auto-description {
+      color: $text-secondary;
+      line-height: 1.5rem;
+    }
+  }
+}

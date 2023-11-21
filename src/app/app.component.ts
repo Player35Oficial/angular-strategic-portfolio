@@ -1,6 +1,13 @@
-import { faBars, faSun, faXmark } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faFileLines,
+  faRightLong,
+  faSun,
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 import { fadeInOutAnimation } from './shared/icon-animations';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +20,10 @@ export class AppComponent {
   isMenuOpen: boolean = false;
   sunIcon = faSun;
   burgerIcon = this.isMenuOpen ? faXmark : faBars;
+  jsIcon = faJs;
+
+  rightArrowIcon = faRightLong;
+  resumeIcon = faFileLines;
 
   toggleMenu() {
     let menu = document.querySelector('.header-components.mobile');
