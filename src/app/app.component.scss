@@ -42,6 +42,7 @@
   }
 }
 
+// Presentation 2
 .more-about-me-container {
   margin-top: 2rem;
   padding: 4rem 1.5rem;
@@ -84,5 +85,32 @@
       color: $text-secondary;
       line-height: 1.5rem;
     }
+  }
+}
+
+// Projects
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem 1.5rem;
+
+  & > .hs {
+    color: $stroke-highlight;
+  }
+
+  & > .hs,
+  .section-title {
+    text-align: center;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  app-button {
+    margin: 0 auto;
   }
 }
