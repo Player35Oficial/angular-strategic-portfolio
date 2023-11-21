@@ -1,4 +1,4 @@
-@import '/src/styles.scss';
+@import "/src/styles.scss";
 
 button {
   color: $text-primary;
@@ -26,8 +26,8 @@ button {
   background-color: $button-primary-default;
 
   &:hover {
-      background-color: $button-primary-hover;
-    }
+    background-color: $button-primary-hover;
+  }
 }
 
 .secondary {
@@ -39,6 +39,14 @@ button {
 
   &.surface {
     background-color: $surface-background;
+  }
+
+  &.surface-2 {
+    background-color: $surface-secondary;
+
+    &:hover {
+      background-color: $surface-tertiary;
+    }
   }
 }
 

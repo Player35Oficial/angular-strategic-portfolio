@@ -1,7 +1,7 @@
 <header class="header">
   <div class="log hs">LOGO</div>
-  <div class="header-components">
-    <nav class="nav">
+  <div class="header-components desktop">
+    <nav class="nav-desktop-menu">
       <a href="#" class="menu-item">Home</a>
       <a href="#" class="menu-item">About</a>
       <a href="#" class="menu-item">Projects</a>
@@ -9,7 +9,35 @@
     </nav>
     <div class="actions">
       <div>PT</div>
-      <div>O</div>
+      <div><fa-icon [icon]="sunIcon"></fa-icon></div>
+    </div>
+  </div>
+  <button
+    class="mobile-toggle"
+    [@fadeInOut]="isMenuOpen ? 'open' : 'closed'"
+    (click)="toggleMenu()"
+  >
+    <fa-icon [icon]="burgerIcon"></fa-icon>
+  </button>
+  <div class="header-components mobile">
+    <nav class="nav-mobile-menu">
+      <a href="#" class="menu-item">Home</a>
+      <a href="#" class="menu-item">About</a>
+      <a href="#" class="menu-item">Projects</a>
+      <a href="#" class="menu-item">Contact</a>
+    </nav>
+    <div class="divider"></div>
+    <div class="actions">
+      <app-button
+        color="secondary surface-2"
+        [buttonIcon]="sunIcon"
+        typeButton="icon"
+      ></app-button>
+      <app-button
+        color="secondary surface-2"
+        buttonLabel="PT"
+        typeButton="icon"
+      ></app-button>
     </div>
   </div>
 </header>

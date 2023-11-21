@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ButtonComponent,
-    ProjectCardComponent
-  ],
+  declarations: [AppComponent, ButtonComponent, ProjectCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
