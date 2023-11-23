@@ -1,4 +1,5 @@
 import {
+  faArrowUpLong,
   faBars,
   faFileLines,
   faRightLong,
@@ -28,6 +29,7 @@ export class AppComponent {
   jsIcon = faJs;
 
   rightArrowIcon = faRightLong;
+  upArrowIcon = faArrowUpLong;
   resumeIcon = faFileLines;
 
   instagramIcon = faInstagram;
@@ -40,5 +42,14 @@ export class AppComponent {
     this.isMenuOpen = !this.isMenuOpen;
 
     this.burgerIcon = this.isMenuOpen ? faXmark : faBars;
+  }
+
+  clicouHehe() {
+    console.log('Clicou hehehehehehe');
+    window.scrollTo({
+      top: -100,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 }

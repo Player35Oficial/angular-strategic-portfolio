@@ -179,3 +179,25 @@
     }
   }
 }
+
+.footer {
+  color: $text-secondary;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  p > span {
+    text-decoration: underline;
+  }
+
+  .action-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
