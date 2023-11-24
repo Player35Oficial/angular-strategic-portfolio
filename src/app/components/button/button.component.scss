@@ -30,6 +30,16 @@ button {
   }
 }
 
+.small {
+  height: 48px;
+  width: 48px;
+}
+
+.centralize {
+  justify-content: center;
+  align-items: center;
+}
+
 .secondary {
   background-color: $surface-secondary;
 
@@ -39,6 +49,10 @@ button {
 
   &.surface {
     background-color: $surface-background;
+
+    &:hover {
+      background-color: $surface-tertiary;
+    }
   }
 
   &.surface-2 {
@@ -57,6 +71,16 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+.double-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .reverse {

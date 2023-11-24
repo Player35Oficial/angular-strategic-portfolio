@@ -1,1 +1,60 @@
-<p>projects works!</p>
+<div class="main-container">
+  <div class="the-project">
+    <div class="image-container">
+      <app-button
+        color="secondary surface small centralize"
+        [buttonIcon]="leftIcon"
+      ></app-button>
+      <img src="../../../assets/placeholder.png" alt="project image" />
+    </div>
+    <div class="content-container">
+      <div class="info">
+        <span class="project-period">Jul - Dec 2022</span>
+        <div class="tech-list">
+          <fa-icon [icon]="FaJS"></fa-icon>
+          <span class="tech-icon">RC</span>
+          <span class="tech-icon">NO</span>
+        </div>
+      </div>
+      <div class="main-info">
+        <p class="title">Nome do projeto</p>
+        <p class="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          excepturi sequi dicta illo praesentium vel qui natus quae asperiores
+          dolor cumque tempora facilis obcaecati maxime nihil, quasi, voluptates
+          quas corporis. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Expedita distinctio hic nemo perferendis, ex dolorum repellat
+          consequatur asperiores dignissimos obcaecati eius aperiam, ipsam
+          reprehenderit aspernatur omnis consectetur totam minima quos.
+          Laudantium nam officiis incidunt veniam! Reiciendis, accusantium
+          beatae sit consequatur voluptatibus accusamus ipsa voluptates corrupti
+          quasi, ducimus fugiat asperiores voluptatum dignissimos quo cum ab
+          facilis. Eaque consequatur odio dolores quibusdam? Ex ratione animi
+          deleniti? Veritatis, quo maiores dolor omnis sequi atque, quia ducimus
+          nemo, eius repudiandae eveniet libero dolores suscipit sint distinctio
+          doloribus officiis? Eius a non maiores esse excepturi! Amet quaerat
+          nobis ullam esse.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="project-actions">
+    <p>Take a look at this project</p>
+    <div class="actions">
+      <app-button
+        color="primary w-100"
+        buttonLabel="Live Demo"
+        [buttonIcon]="upRightIcon"
+        [secondIcon]="globeIcon"
+        typeButton="double-icon"
+      ></app-button>
+      <app-button
+        color="secondary w-100"
+        buttonLabel="Code"
+        [buttonIcon]="upRightIcon"
+        [secondIcon]="githubIcon"
+        typeButton="double-icon"
+      ></app-button>
+    </div>
+  </div>
+</div>

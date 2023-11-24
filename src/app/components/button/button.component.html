@@ -1,4 +1,5 @@
 <button class="{{ color }} {{ typeButton }}-btn">
+  <fa-icon *ngIf="secondIcon" [icon]="secondIcon"> </fa-icon>
   {{ buttonLabel }}
   <fa-icon *ngIf="buttonIcon" [icon]="buttonIcon"> </fa-icon>
 </button>

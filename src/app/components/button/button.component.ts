@@ -9,6 +9,7 @@ import { IconDefinition, faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class ButtonComponent {
   @Input() buttonLabel? = '';
   @Input() buttonIcon!: IconDefinition;
+  @Input() secondIcon?: IconDefinition;
   @Input() color = '';
   @Input() typeButton = '';
 }
